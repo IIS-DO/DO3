@@ -13,7 +13,7 @@ public class DrawingView extends JPanel{
 	}
 	
 	public void paint(Graphics g) {
-		ListIterator<Point> it = model.getShapes().listIterator();
+		ListIterator<Shape> it = model.getShapes().listIterator();
 		while(it.hasNext()) {
 			it.next().draw(g);
 		}

@@ -5,21 +5,21 @@ import java.util.List;
 
 public class DrawingModel {
 	
-	private List<Point> shapes = new ArrayList<Point>();
+	private List<Shape> shapes = new ArrayList<Shape>();
 
-	public List<Point> getShapes() {
+	public List<Shape> getShapes() {
 		return shapes;
 	}
 	
-	public void add(Point p) {
+	public void add(Shape p) {
 		shapes.add(p);
 	}
 	
-	public void remove(Point p) {
+	public void remove(Shape p) {
 		shapes.remove(p);
 	}
 	
-	public Point get(int i) {
+	public Shape get(int i) {
 		return shapes.get(i);
 	}
 	
